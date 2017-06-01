@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  #container
+  div
+  | Node.JS Email application
+  div
+    h1 Mailer In Node.JS
+    input#to(type='text', placeholder='Enter E-mail ID where you want to send')
+    input#subject(type='text', placeholder='Write Subject')
+    textarea#content(cols='40', rows='5', placeholder='Write what you want to send')
+    button#send_email Send Email
+    span#message
+
